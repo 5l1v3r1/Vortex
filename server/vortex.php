@@ -54,11 +54,11 @@ require_once("protection.php");
                         <option value="|python3">Python3</option>
                         <option value="|ruby">Ruby</option>
                         <option value="|lua">Lua</option>
-                        <option value=">$t.pl&&perl $t.pl">Perl</option>
-                        <option value=">$t.go&&go run $t.go">Golang</option>
-                        <option value=">$t.cpp&&g++ $t.cpp -o $t &&$t">C++</option>
-                        <option value=">$t.c&&gcc $t.c -o $t &&$t">C</option>
-                        <option value=">$t.htm&&firefox $t.htm">HTML</option>
+                        <option value=">$t.pl;perl $t.pl">Perl</option>
+                        <option value=">$t.go;go run $t.go">Golang</option>
+                        <option value=">$t.cpp;g++ $t.cpp -o $t;$t">C++</option>
+                        <option value=">$t.c;gcc $t.c -o $t;$t">C</option>
+                        <option value=">$t.htm;firefox $t.htm">HTML</option>
                     </select>       
                     <label>Select language</label>
                 </div>

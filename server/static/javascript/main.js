@@ -10,7 +10,7 @@ function createPayload(){
         M.toast({html: "<span class=\"material-icons icon-toast\">language</span>Please selecte language!", displayLength: 6000});
         return;
     }
-    if(lang.search("&&") != -1) { cmd = "t=/tmp/0&&" + cmd; }
+    if(lang.search(";") != -1) { cmd = "t=/tmp/0;" + cmd; }
 
     $.ajax({
         type: 'post',

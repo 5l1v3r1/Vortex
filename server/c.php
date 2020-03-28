@@ -57,6 +57,10 @@ if(isset($_POST["command"])) {
         ), JSON_PRETTY_PRINT);
         // Check path
         checkPath($payloadName);
+        // Check if exists payloads/ dir
+        if(!file_exists("payloads/")) {
+            mkdir("payloads/", 0700);
+        }
         // Write payload code
         if(file_put_contents($payloadName, $json)) {
             die("<span class=\"material-icons toast-icon\">done</span> Payload saved.");
